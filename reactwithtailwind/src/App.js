@@ -7,6 +7,7 @@ import About from "./pages/about";
 import Menu from "./pages/menu";
 import { Routes, Route } from "react-router-dom";
 import DropDown from "./components/DropDown";
+import CustomThemePage from "./pages/customThemePage";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +41,9 @@ function App() {
         <Route path="/menu" element={<Menu />}></Route>
         <Route path="/about" element={<About />}>
           About
+        </Route>
+        <Route path="/custom-theme" element={<CustomThemePage />}>
+          CustomTheme
         </Route>
       </Routes>
       <Footer />

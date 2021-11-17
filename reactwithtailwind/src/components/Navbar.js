@@ -39,6 +39,9 @@ const NavBar = ({ toggle }) => {
         <Link className="p-4" to="/contact">
           Contact
         </Link>
+        <Link className="p-4" to="/custom-theme">
+          CustomTheme
+        </Link>
       </div>
     </nav>
   );
